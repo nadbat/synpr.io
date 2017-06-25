@@ -1,0 +1,25 @@
+{
+  "name": "project_synergy",
+  "description": "first gulp project",
+  "main": "gulpfile.js",
+  "authors": [
+    "BatalovaN"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "synergy"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
