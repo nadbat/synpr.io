@@ -1,0 +1,236 @@
+extend _layout
+block title
+	title Hello
+block content		
+	.mainslider
+		.container
+			.row
+				.mainslider_text.col-md-6.col-lg-6.col-md-offset-1.col-lg-offset-1
+					h1.white  Умные решения для дома
+					a.btn.btn--white(href='/description.html') Подробнее
+	.promo_block
+		.container
+			.row
+				.promo_block__inner.col-lg-10.col-md-offset-1.col-md-10.clearfix(class='col=lg-offset-1')
+					.promo_item
+						img(src='/img/Home_center.png', alt='Promo')
+					.promo
+						p.promo_text.clearfix Центральный блок бесплатно
+						p.def_text При покупке набора умных ламп
+					.promobutton.col-md-2.col-lg-2
+						a.btn.btn--dark(href='/cart.html') Заказать
+	.howitworks
+		.container
+			.row.howitwork__inner
+				.how_descr.col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-1
+					h3.accent Узнай
+					h2 Как это работает
+					.how-descr__text.col-md-7.col-lg-7
+						p
+							| Система SYNERGY позволит вам контролировать происходящее в каждом уголке вашего дома
+				.homeicons.col-md-6
+					img(src='/img/house.png', alt='')
+	.appswebpanel
+		.container
+			.row
+				.apps_descr.col-md-12.col-lg-12.clearfix
+					h3.accent Управляй
+					h2 С любых устройств
+					.appspicture.col-md-12
+						img(src='/img/interface.png', alt='presentUD')
+					p Скачай приложение для своего устройства и ознакомься с преимуществом управления
+					.appsbtns_container
+						.appsbtns
+							.col-md-4
+								a.winbttn(href='')
+									svg.badge_buttons
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#win_badge')
+							.col-md-4
+								a.appbttn(href='')
+									svg.badge_buttons
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#appstore_badge')
+							.col-md-4
+								a.playbttn(href='')
+									svg.badge_buttons
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#google_badge')
+	.steps
+		.container
+			.row
+				.steps_inner.col-md-12.col-lg-12.align_center.clearfix
+					h2.dark.steps_inner_header Этапы работ
+					ol.steps_inner__bullet.steps_inner__bullet--a
+						li.steps_inner__item
+							.steps_inner__counter
+							p.steps_item Выбор решения
+							p.text
+								| Вы можете выбрать готовый набор или воспользоваться услугами специалистов и заказать индивидуальный проект
+						li.steps_inner__item
+							.steps_inner__counter
+							p.steps_item Установка и отладка
+							p.text
+								| Установку можно производить самостоятельно, также можно воспользоваться услугами специалистов
+						li.steps_inner__item
+							.steps_inner__counter
+							p.steps_item Поддержка и мониторинг
+							p.text
+								| После установки доступны услуги по поддержке и мониторингу работы системы специалистами компании SYNERGY
+	.packages
+		.container
+			.row.package_wrapper
+				h2.dark Наборы
+				.infoblock.row.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1
+					.text_promo.infoblock_item.col-lg-9.col-md-9
+						p
+							| Вы можете выбрать готовый набор или обратиться к нашим специалистам за помощью в подборе решения,подходящего именно вам
+					.callbttn.infoblock_button.col-lg-3.col-md-3
+						a.btn.btn--dark(href='callform.html') Заказать звонок
+				.package_items_wrap.col-md-12.col-lg-12
+					.package_item.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1.clearfix
+						.package_description.col-lg-6.col-md-6
+							h3.accent Базовый
+							p.text
+								| Начальный комплект устройств умного дома. Включает в себя центр умного дома, умную розетку, датчик протечки воды и датчик движения
+							.icons_devices.clearfix
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_lick')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_sensor')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_lock')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_plug')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_smarthub')
+							.desctiption__addtocart
+								p.price 14500p
+								.add_cart.col-md-6
+									a.btn.btn--dark(href='cart.html') Заказать
+						.package_image.col-lg-6.col-md-6
+							img(src='/img/blm-15et-lo09.png', alt='securityimage')
+					.package_item.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1.clearfix
+						.package_description.col-lg-6.col-md-6
+							h3.accent Безопасность
+							p.text
+								| Оптимальный комплект устройств для безопасного дома. Включает  в себя центр умного дома, датчик открытия и закрытия дверей, датчик движения, wi-fi-камеру, датчик движения
+							.icons_devices.clearfix
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_camera')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_lamp')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_garage')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_sensor')
+								svg.package_icons
+									use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_smarthub')
+							.bottom_addtocart
+								p.price 37000p
+								.add_cart.col-md-6.col-lg-6
+									a.btn.btn--dark(href='cart.html') Заказать
+						.package_image.col-lg-6.col-md-6
+							img(src='/img/shutterstock-security copy.png', alt='securityimage')
+				.infoblock.col-md-10.col-lg-10.col-md-offset-1.col-lg-offset-1
+					.text_promo.infoblock_item.col-lg-9.col-md-9
+						p Купив один из наборов системы, вы можете приобрести любое количество устройств
+					.more_button.infoblock_button.col-lg-3.col-md-3
+						a.btn.btn--dark(href='description.html') Подробнее
+	.comments_wrapper
+		.container
+			.row.row-centered
+				.comments.col-md-8.align-center.col-centered.clearfix
+					h2.dark.clearfix Отзывы
+					.brackets
+						// check how to implement brackets image
+					.comm_item.clearfix
+						p.text
+							| Когда сработала сигнализация, я несколько минут металась и не знала что делать.  Но со мной связались из центра мониторинга, успокоили и вызвали полицию. В результате человека поймали, а дома всё осталось в сохранности. В такие моменты понимаешь как важно иметь поддержку.
+					.comm_item.person.col-md-8.col-lg-8.align-center.col-centered
+						.com_item_image.col-md-4.col-lg-4
+							img(src='/img/photo_comment.png', alt='')
+						.comm_item_text.col-md-8.col-lg-8
+							p.com_name Наталья
+							p.small_text Заботливая мама и клиент компании SYNERGY
+	.system_promo
+		.container.system_promo__inner
+			.row.system_promo__list
+				.system_promo__item.feature.col-lg-3.col-md-3
+					.feature__icon
+						img(src='/svg/icon_modularity.svg')
+					h3.feature__title.white Мониторинг
+					p.feature__text Возможность дополнить комплектацию системы любым устройством в любое время.
+					.feature__button
+						a.btn.btn--white(href='description.html') Подробнее
+				.system_promo__item.feature.col-lg-3.col-md-3
+					.feature__icon
+						img(src='/svg/icon_modularity.svg')
+					h3.feature__title.white Мониторинг
+					p.feature__text Возможность дополнить комплектацию системы любым устройством в любое время.
+					.feature__button
+						a.btn.btn--white(href='description.html') Подробнее
+				.system_promo__item.feature.col-lg-3.col-md-3
+					.feature__icon
+						img(src='/svg/icon_modularity.svg')
+					h3.feature__title.white Мониторинг
+					p.feature__text Возможность дополнить комплектацию системы любым устройством в любое время.
+					.feature__button
+						a.btn.btn--white(href='description.html') Подробнее
+				.system_promo__item.feature.col-lg-3.col-md-3
+					.feature__icon
+						img(src='/svg/icon_modularity.svg')
+					h3.feature__title.white Мониторинг
+					p.feature__text Возможность дополнить комплектацию системы любым устройством в любое время.
+					.feature__button
+						a.btn.btn--white(href='description.html') Подробнее
+	.sh_description_wrapper
+		.container
+			.row
+				.col-md-4
+					.sh_icon
+						img(src='', alt='')
+					h3 Комфорт
+					.sh_description
+						p
+							| Все действия в работе системы могут быть автавтоматизированы с помощью сценариев: усправление освещенностью, климат-контроль,  режимы работы электроприборов.
+				.col-md-4
+					.sh_icon
+						img(src='', alt='')
+					h3 Экономия
+					.sh_description
+						p
+							| Устройства последних поколений позволяют экономить водные и энергоресурсы, оберегая ваш бютжет.
+				.col-md-4
+					.sh_icon
+						img(src='', alt='')
+					h3 Безопасность
+					.sh_description
+						p
+							| Модули системы полностью контролируют безопасность Вашего дома, при необходимости уведомляя о непооладках и предотвращая  возможный ущерб.
+	.projects
+		.container
+			.row
+				h2(col-md-12='', col-lg-12='') Наши проекты
+				.projects_wrapper.clearfix
+					.projects__item.col-md-3
+						
+						.projects__item-photo
+							img(src='/img/project1.png', alt='')
+					.projects__item.col-md-3
+						.projects__item-photo
+							img(src='/img/project1.png', alt='')
+					.projects__item.col-md-3
+						.projects__item-photo
+							img(src='/img/project1.png', alt='')
+					.projects__item.col-md-3
+						.projects__item-photo
+							img(src='/img/project1.png', alt='')
+	.partners
+		.container
+			.row
+				.slider_partners
+	.news_promo
+		.container
+			.row
+				.news_promo__inner
+					h3.white Подпишись и будь в курсе новостей
+					input(type='news_promo__mail', placeholder='Введите адрес электронной почты')
+					a.btn.btn--white(href='description.html') Подписаться
