@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('html-blocks/page-head.html')
+
+<body>
+@@include('html-blocks/page-header.html')
+@@include('html-blocks/devices_image.html')
+@@include('html-blocks/filter_devices.html')
+@@include('html-blocks/lighting_list.html')
+@@include('html-blocks/camera_list.html')
+@@include('html-blocks/sensors_list.html')
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 t-ac devices_morebutt">
+			@@include('html-blocks/morebttn.html')
+		</div>
+	</div>
+</div>
+
+@@include('html-blocks/footer.html')
+
+
+@@include('../svg-sprite/sprite.svg')
+<script type="text/javascript" src='js/libs/jquery.min.js'></script>
+<script type="text/javascript" src='js/main.js'></script>
+</body>
+</html>
+
+
+
